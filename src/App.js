@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NewClass from './components/classCounterState';
+import HookExp from './components/HookCounter';
+import HookExp2 from './components/HookCounter2';
+import ObjHookExp from './components/objHook';
+import HookExpArr from './components/HookWithArray';
+import HookUseEffectExp from './components/UseEffectExp';
+import HookMouse from './components/HookMouse';
+import DataFetch from './components/Fetching';
+import ComponentC from './components/ComponenetC';
+
+export const UserContext=React.createContext()
+export const UserContext2=React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {/* <NewClass /> */}
+    {/* <HookExp/> */}
+    {/* <HookExp2/> */}
+    {/* <ObjHookExp/> */}
+    {/* <HookExpArr/> */}
+    {/* <HookUseEffectExp/> */}
+   {/* <HookMouse/> */}
+   {/* <DataFetch/> */}
+
+   <UserContext.Provider value={"Gorav"}>
+    <UserContext2.Provider value={"Lund"}>
+    <ComponentC/>
+    </UserContext2.Provider>
+    </UserContext.Provider>
+  
     </div>
   );
 }
