@@ -9,6 +9,11 @@ import HookUseEffectExp from './components/UseEffectExp';
 import HookMouse from './components/HookMouse';
 import DataFetch from './components/Fetching';
 import ComponentC from './components/ComponenetC';
+import UseReducer from './components/UseReducer';
+import ClickCounter from './components/ClickCounter(HOC)';
+import HoverCount from './components/HoverCount';
+import UpdatedCompo from './components/WithCounterHOC';
+import ClickCounter2 from './components/ClickCounter2';
 
 export const UserContext=React.createContext()
 export const UserContext2=React.createContext()
@@ -25,12 +30,18 @@ function App() {
    {/* <HookMouse/> */}
    {/* <DataFetch/> */}
 
-   <UserContext.Provider value={"Gorav"}>
+   {/* <UserContext.Provider value={"Gorav"}>
     <UserContext2.Provider value={"Lund"}>
     <ComponentC/>
     </UserContext2.Provider>
-    </UserContext.Provider>
-  
+    </UserContext.Provider> */}
+
+    {/* <UseReducer/> */}
+    {/* <ClickCounter/>
+    <HoverCount/>
+    <UpdatedCompo/> */}
+
+    <ClickCounter2/>
     </div>
   );
 }

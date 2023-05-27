@@ -6,7 +6,7 @@ function ComponentF(){
     const contxt2=useContext(UserContext2)
     return(
         <div>
-            <UserContext.Consumer>
+            {/* <UserContext.Consumer>
                 {
                     user=>{
                         return(
@@ -17,10 +17,10 @@ function ComponentF(){
                         
                     }
                 }
-            </UserContext.Consumer>
+            </UserContext.Consumer>  */}
  {contxt1} and {contxt2}
         </div>
     )
 }
 
-export default ComponentF
+export default ComponentF 
